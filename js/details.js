@@ -4,6 +4,9 @@ const gamesDetails = {
         arabicName: "سايلنت هيل: الذكريات المحطمة",
         year: "2009",
         image: "images/silent-hill.jpg",
+        screenshots: [
+    "images/silent-hill-1.jpg"
+],
         description: "رحلة رعب وغموض في مدينة سايلنت هيل، حيث تتغير الأحداث حسب اختياراتك.",
         link: "https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso/file?action=check&dkey=5uiibu5f59e&r=1554"
     },
@@ -39,6 +42,12 @@ if (game) {
         <h3>${game.name}</h3>
         <p>سنة الإصدار: ${game.year}</p>
         <p>${game.description}</p>
+        <div class="game-gallery">
+    <h2>صور من داخل اللعبة</h2>
+    ${game.screenshots ? game.screenshots.map(img => `
+        <img src="${img}" alt="صورة من اللعبة">
+    `).join("") : ""}
+</div>
 
         <a href="${game.link}" target="_blank" rel="noopener noreferrer">
             تحميل اللعبة
