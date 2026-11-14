@@ -72,4 +72,12 @@ buttons.forEach(button => {
     });
 });
 
-displayGames();
+displayGames();,
+{
+    name: "Manhunt 2",
+    arabicName: "مانهنت 2 - النسخة العربية",
+    category: "action",
+    year: "2007",
+    image: "images/manhunt-2.jpg",
+    link: "#"
+        }
