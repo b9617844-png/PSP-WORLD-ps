@@ -5,7 +5,7 @@ const games = [
         category: "arabic",
         year: "2009",
         image: "images/silent-hill.jpg",
-        link: ":https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso/file?action=check&dkey=5uiibu5f59e&r=1554"
+        link: "https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso/file?action=check&dkey=5uiibu5f59e&r=1554"
     },
     {
         name: "Manhunt 2",
@@ -13,7 +13,7 @@ const games = [
         category: "arabic",
         year: "2007",
         image: "images/manhunt-2.jpg",
-        link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check""
+        link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
     }
 ];
 
@@ -48,7 +48,8 @@ function displayGames() {
     filtered.forEach(game => {
         grid.innerHTML += `
             <article class="game-card">
-                <img src="${game.image}" alt="${game.name}"
+                <img src="${game.image}"
+                     alt="${game.name}"
                      onerror="this.src='https://placehold.co/400x550/121625/ffffff?text=PSP+GAME'">
 
                 <div class="game-info">
@@ -56,7 +57,9 @@ function displayGames() {
                     <p>${game.arabicName}</p>
                     <p>سنة الإصدار: ${game.year}</p>
 
-                    <a href="${game.link}">
+                    <a href="${game.link}"
+                       target="_blank"
+                       rel="noopener noreferrer">
                        زيارة المصدر الخارجي
                     </a>
                 </div>
