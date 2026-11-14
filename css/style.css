@@ -1,1 +1,284 @@
 # PSP-WORLD-ps
+cat css/style.css
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg: #090b14;
+    --card: #121625;
+    --primary: #7657ff;
+    --secondary: #00d4ff;
+    --text: #ffffff;
+    --muted: #9299ad;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0e1120;
+    border-bottom: 1px solid #20253a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    direction: ltr;
+}
+
+.logo span,
+footer span {
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--muted);
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+.hero {
+    min-height: 420px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 40%, #39247766, transparent 40%),
+        linear-gradient(120deg, #101629, #090b14);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: var(--secondary);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    margin: 15px 0;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: var(--primary);
+    direction: ltr;
+    display: inline-block;
+}
+
+.hero p {
+    color: var(--muted);
+    line-height: 2;
+    max-width: 520px;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #7657ff, #4931c5);
+    font-weight: 700;
+    transition: .3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px #7657ff55;
+}
+
+.games-section {
+    padding: 65px 7%;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+#search {
+    background: var(--card);
+    border: 1px solid #282e45;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 9px;
+    width: min(100%, 280px);
+    font-family: inherit;
+    outline: none;
+}
+
+#search:focus {
+    border-color: var(--primary);
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.categories button {
+    background: var(--card);
+    border: 1px solid #282e45;
+    color: var(--muted);
+    padding: 9px 22px;
+    border-radius: 7px;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.categories button.active,
+.categories button:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 22px;
+}
+
+.game-card {
+    background: var(--card);
+    border: 1px solid #20253a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.game-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--primary);
+}
+
+.game-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    background: #20253a;
+}
+
+.game-info {
+    padding: 15px;
+}
+
+.game-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.game-info p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.game-info a {
+    display: block;
+    text-align: center;
+    background: #7657ff22;
+    color: #a895ff;
+    padding: 9px;
+    margin-top: 14px;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 15px;
+    background: #0e1120;
+    border-top: 1px solid #20253a;
+}
+
+footer p {
+    color: var(--muted);
+    margin: 10px 0;
+}
+
+footer small {
+    color: #626a80;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 55px 6%;
+    }
+
+    .games-section {
+        padding: 45px 5%;
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .game-card img {
+        height: 180px;
+    }
+  }
