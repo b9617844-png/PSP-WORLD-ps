@@ -10,7 +10,7 @@ const games = [
     {
         name: "Manhunt 2",
         arabicName: "مانهنت 2 - النسخة العربية",
-        category: "action",
+        category: "arabic",
         year: "2007",
         image: "images/manhunt-2.jpg",
         link: "#"
@@ -48,8 +48,7 @@ function displayGames() {
     filtered.forEach(game => {
         grid.innerHTML += `
             <article class="game-card">
-                <img src="${game.image}"
-                     alt="${game.name}"
+                <img src="${game.image}" alt="${game.name}"
                      onerror="this.src='https://placehold.co/400x550/121625/ffffff?text=PSP+GAME'">
 
                 <div class="game-info">
@@ -57,9 +56,7 @@ function displayGames() {
                     <p>${game.arabicName}</p>
                     <p>سنة الإصدار: ${game.year}</p>
 
-                    <a href="${game.link}"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    <a href="${game.link}">
                        زيارة المصدر الخارجي
                     </a>
                 </div>
