@@ -5,7 +5,7 @@ const games = [
         category: "arabic",
         year: "2009",
         image: "images/silent-hill.jpg",
-        link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
+        link: "link: "https:"//www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
     },
     {
         name: "Manhunt 2",
