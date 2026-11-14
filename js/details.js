@@ -4,15 +4,17 @@ const gamesDetails = {
         arabicName: "سايلنت هيل: الذكريات المحطمة",
         year: "2009",
         image: "images/silent-hill.jpg",
-        description: "رحلة رعب وغموض في مدينة سايلنت هيل، حيث تتغير الأحداث حسب اختياراتك."
+        description: "رحلة رعب وغموض في مدينة سايلنت هيل، حيث تتغير الأحداث حسب اختياراتك.",
+        link: "https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso/file?action=check&dkey=5uiibu5f59e&r=1554"
     },
 
     "manhunt-2": {
         name: "Manhunt 2",
-        arabicName: "مانهنت 2",
+        arabicName: "مانهنت 2 - النسخة العربية",
         year: "2007",
         image: "images/manhunt-2.jpg",
-        description: "لعبة إثارة وتشويق تدور حول الهروب وكشف أسرار غامضة."
+        description: "لعبة إثارة وتشويق تدور حول الهروب وكشف أسرار غامضة.",
+        link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
     },
 
     "assassins-creed-bloodlines": {
@@ -20,7 +22,8 @@ const gamesDetails = {
         arabicName: "أساسنز كريد: سلالات الدم",
         year: "2009",
         image: "images/assassins-creed-bloodlines.jpg",
-        description: "انطلق في مغامرة أكشن وتسلل مع ألتاير في عالم أساسنز كريد."
+        description: "انطلق في مغامرة أكشن وتسلل مع ألتاير في عالم أساسنز كريد.",
+        link: "https://disk.yandex.com/d/BJ7fgQuh7Xoh5Q"
     }
 };
 
@@ -36,8 +39,17 @@ if (game) {
         <h3>${game.name}</h3>
         <p>سنة الإصدار: ${game.year}</p>
         <p>${game.description}</p>
+
+        <a href="${game.link}" target="_blank" rel="noopener noreferrer">
+            تحميل اللعبة
+        </a>
+
+        <br><br>
         <a href="index.html">العودة إلى الألعاب</a>
     `;
 } else {
-    details.innerHTML = "<h2>اللعبة غير موجودة</h2><a href='index.html'>العودة للرئيسية</a>";
+    details.innerHTML = `
+        <h2>اللعبة غير موجودة</h2>
+        <a href="index.html">العودة للرئيسية</a>
+    `;
 }
