@@ -1,27 +1,30 @@
 const games = [
     {
+        id: "silent-hill",
         name: "Silent Hill: Shattered Memories",
         arabicName: "سايلنت هيل: الذكريات المحطمة",
         category: "arabic",
         year: "2009",
         image: "images/silent-hill.jpg",
-        link:  "https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso/file?action=check&dkey=5uiibu5f59e&r=1554"
+        link: "https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso/file?action=check&dkey=5uiibu5f59e&r=1554"
     },
     {
+        id: "manhunt-2",
         name: "Manhunt 2",
         arabicName: "مانهنت 2 - النسخة العربية",
         category: "arabic",
         year: "2007",
         image: "images/manhunt-2.jpg",
-        link:  "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
+        link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
     },
     {
+        id: "assassins-creed-bloodlines",
         name: "Assassin's Creed: Bloodlines",
         arabicName: "أساسنز كريد: سلالات الدم",
         category: "action",
         year: "2009",
         image: "images/assassins-creed-bloodlines.jpg",
-        link:  "https://disk.yandex.com/d/BJ7fgQuh7Xoh5Q"
+        link: "https://disk.yandex.com/d/BJ7fgQuh7Xoh5Q"
     }
 ];
 
@@ -30,10 +33,7 @@ function startWebsite() {
     const search = document.getElementById("search");
     const buttons = document.querySelectorAll(".categories button");
 
-    if (!grid || !search) {
-        console.error("لم يتم العثور على عناصر الألعاب أو البحث");
-        return;
-    }
+    if (!grid || !search) return;
 
     let selectedCategory = "all";
 
@@ -73,10 +73,8 @@ function startWebsite() {
                     <p>${game.arabicName}</p>
                     <p>سنة الإصدار: ${game.year}</p>
 
-                    <a href="${game.link}"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                       تحميل اللعبة
+                    <a href="game.html?id=${game.id}">
+                        تفاصيل اللعبة
                     </a>
                 </div>
             `;
@@ -104,4 +102,4 @@ if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", startWebsite);
 } else {
     startWebsite();
-}
+                }
