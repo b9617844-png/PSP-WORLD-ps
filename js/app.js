@@ -82,4 +82,4 @@ button.classList.add("active");
 
 });
 
-displayGames();  
+displayGames(); 
