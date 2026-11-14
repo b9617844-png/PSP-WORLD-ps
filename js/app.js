@@ -13,7 +13,15 @@ const games = [
         category: "arabic",
         year: "2007",
         image: "images/manhunt-2.jpg",
-        link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
+        link:  "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
+    },
+    {
+        name: "Assassin's Creed: Bloodlines",
+        arabicName: "أساسنز كريد: سلالات الدم",
+        category: "action",
+        year: "2009",
+        image: "images/assassins-creed-bloodlines.jpg",
+        link:  "https://disk.yandex.com/d/BJ7fgQuh7Xoh5Q"
     }
 ];
 
@@ -40,44 +48,4 @@ function displayGames() {
 
     grid.innerHTML = "";
 
-    if (filtered.length === 0) {
-        grid.innerHTML = "<p>لا توجد ألعاب مطابقة للبحث.</p>";
-        return;
-    }
-
-    filtered.forEach(game => {
-        grid.innerHTML += `
-            <article class="game-card">
-                <img src="${game.image}"
-                     alt="${game.name}"
-                     onerror="this.src='https://placehold.co/400x550/121625/ffffff?text=PSP+GAME'">
-
-                <div class="game-info">
-                    <h3>${game.name}</h3>
-                    <p>${game.arabicName}</p>
-                    <p>سنة الإصدار: ${game.year}</p>
-
-                    <a href="${game.link}"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                       زيارة المصدر الخارجي
-                    </a>
-                </div>
-            </article>
-        `;
-    });
-}
-
-search.addEventListener("input", displayGames);
-
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        buttons.forEach(b => b.classList.remove("active"));
-        button.classList.add("active");
-
-        selectedCategory = button.dataset.category;
-        displayGames();
-    });
-});
-
-displayGames();
+    if (filtered.length === 
