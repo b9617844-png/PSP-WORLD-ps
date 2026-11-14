@@ -13,7 +13,7 @@ const games = [
         category: "arabic",
         year: "2007",
         image: "images/manhunt-2.jpg",
-        link: "#"
+        link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check""
     }
 ];
 
