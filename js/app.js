@@ -76,7 +76,7 @@ function startWebsite() {
                     <a href="${game.link}"
                        target="_blank"
                        rel="noopener noreferrer">
-                       زيارة المصدر الخارجي
+                       تحميل اللعبة
                     </a>
                 </div>
             `;
