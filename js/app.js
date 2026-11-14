@@ -25,37 +25,45 @@ const games = [
     }
 ];
 
-const grid = document.getElementById("gamesGrid");
-const search = document.getElementById("search");
-const buttons = document.querySelectorAll(".categories button");
+function startWebsite() {
+    const grid = document.getElementById("gamesGrid");
+    const search = document.getElementById("search");
+    const buttons = document.querySelectorAll(".categories button");
 
-let selectedCategory = "all";
-
-function displayGames() {
-    const query = search.value.toLowerCase();
-
-    const filtered = games.filter(game => {
-        const matchesSearch =
-            game.name.toLowerCase().includes(query) ||
-            game.arabicName.includes(query);
-
-        const matchesCategory =
-            selectedCategory === "all" ||
-            game.category === selectedCategory;
-
-        return matchesSearch && matchesCategory;
-    });
-
-    grid.innerHTML = "";
-
-    if (filtered.length === 0) {
-        grid.innerHTML = "<p>لا توجد ألعاب مطابقة للبحث.</p>";
+    if (!grid || !search) {
+        console.error("لم يتم العثور على عناصر الألعاب أو البحث");
         return;
     }
 
-    filtered.forEach(game => {
-        grid.innerHTML += `
-            <article class="game-card">
+    let selectedCategory = "all";
+
+    function displayGames() {
+        const query = search.value.toLowerCase();
+
+        const filtered = games.filter(game => {
+            const matchesSearch =
+                game.name.toLowerCase().includes(query) ||
+                game.arabicName.includes(query);
+
+            const matchesCategory =
+                selectedCategory === "all" ||
+                game.category === selectedCategory;
+
+            return matchesSearch && matchesCategory;
+        });
+
+        grid.innerHTML = "";
+
+        if (filtered.length === 0) {
+            grid.innerHTML = "<p>لا توجد ألعاب مطابقة للبحث.</p>";
+            return;
+        }
+
+        filtered.forEach(game => {
+            const card = document.createElement("article");
+            card.className = "game-card";
+
+            card.innerHTML = `
                 <img src="${game.image}"
                      alt="${game.name}"
                      onerror="this.src='https://placehold.co/400x550/121625/ffffff?text=PSP+GAME'">
@@ -71,21 +79,29 @@ function displayGames() {
                        زيارة المصدر الخارجي
                     </a>
                 </div>
-            </article>
-        `;
+            `;
+
+            grid.appendChild(card);
+        });
+    }
+
+    search.addEventListener("input", displayGames);
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            buttons.forEach(b => b.classList.remove("active"));
+            button.classList.add("active");
+
+            selectedCategory = button.dataset.category;
+            displayGames();
+        });
     });
+
+    displayGames();
 }
 
-search.addEventListener("input", displayGames);
-
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        buttons.forEach(b => b.classList.remove("active"));
-        button.classList.add("active");
-
-        selectedCategory = button.dataset.category;
-        displayGames();
-    });
-});
-
-displayGames();
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", startWebsite);
+} else {
+    startWebsite();
+}
