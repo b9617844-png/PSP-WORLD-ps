@@ -568,3 +568,12 @@ body:has(#gameDetails) footer {
     width: 100%;
     box-sizing: border-box;
 }
+.game-gallery img {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 15px auto;
+}
