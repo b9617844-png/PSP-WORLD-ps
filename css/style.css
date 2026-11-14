@@ -350,3 +350,51 @@ footer small {
         font-size: 21px;
     }
 }
+/* Game Details Page */
+
+.game-details {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: center;
+    background: #121625;
+    border-radius: 15px;
+    color: white;
+}
+
+.game-details img {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.game-details h1 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+.game-details h3 {
+    color: #ddd;
+}
+
+.game-details p {
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.game-details a {
+    display: inline-block;
+    background: #7c3aed;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.game-details a:hover {
+    background: #5b21b6;
+    transform: scale(1.04);
+}
