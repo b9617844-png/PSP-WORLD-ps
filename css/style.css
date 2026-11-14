@@ -474,3 +474,62 @@ footer small {
         font-size: 23px;
     }
 }
+/* PSP WORLD - Details Page Fix */
+
+body:has(#gameDetails) {
+    background: linear-gradient(135deg, #0b0b18, #17112e, #0b0b18) !important;
+    color: #ffffff !important;
+    min-height: 100vh;
+}
+
+body:has(#gameDetails) .game-details {
+    background: linear-gradient(145deg, #19152f, #111326) !important;
+    color: #ffffff !important;
+    max-width: 900px;
+    width: calc(100% - 30px);
+    margin: 40px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 1px solid #7545bd;
+    border-radius: 18px;
+    text-align: center;
+}
+
+body:has(#gameDetails) .game-details img {
+    display: block;
+    width: 220px !important;
+    height: 300px !important;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto 25px;
+    border-radius: 12px;
+}
+
+body:has(#gameDetails) .game-details h1 {
+    color: #b794ff !important;
+}
+
+body:has(#gameDetails) .game-details h3 {
+    color: #ddd6fe !important;
+}
+
+body:has(#gameDetails) .game-details p {
+    color: #e2e0ed !important;
+}
+
+body:has(#gameDetails) .game-details a {
+    background: #7c3aed;
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 9px;
+}
+
+body:has(#gameDetails) footer {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    body:has(#gameDetails) .game-details {
+        padding: 20px 12px;
+    }
+}
