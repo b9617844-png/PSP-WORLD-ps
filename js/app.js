@@ -36,13 +36,41 @@ const games = [
             link: "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(Asia)%20(EnZhKo).zip?e=1794832433&s=ET5VMWhO9GatPnkVTT-XD3ZIocXpKL03nCYb3Z8K4Ik"
     },
     {
+            
         id: "gta-vice-city-stories",
         name: "Grand Theft Auto: Vice City Stories",
         arabicName: "جاتا فايس سيتي ستوريز",
         category: "action",
         year: "2006",
         image: "images/gta-vice-city-stories.jpg",
-        link: "https://download2277.mediafire.com/39otgcj3bilgEdeavu0qd0mzjOcsXWOYwQI7ItKNOCvhVwhI5EL-Tx7Hii9loQrILzZvUkObr-VvUirKeGac0DCMRg69MXrqdRQUkYm8dHrzh5JGBvHsXupre1IZwOuxafMWmvfcpf1UzIEu2dVn40yAlwuT893SIoqwDyAnMZB8KA/nux995d9ytc8spf/bySadiqGaming.rar"
+        link: "https://www.mediafire.com/file/nux995d9ytc8spf/bySadiqGaming.rar/file?dkey=t7h7ymgoyja&r=1223#"
+    },
+    {
+        id: "fifa-14",
+        name: "FIFA 14",
+        arabicName: "فيفا 14",
+        category: "action",
+        year: "2013",
+        image: "images/fifa-14.jpg",
+        link: "https://sto.romsfast.com/PSP-Complete/Redump/FIFA%2014%20(Europe).zip?e=1794863373&s=PcpZ3vh6X3BqJqJG_WdKxmRBIedMBX3u_1_u_NmGPLI"
+    },
+    {
+        id: "pes-2013",
+        name: "PES 2013",
+        arabicName: "بيس 2013",
+        category: "action",
+        year: "2012",
+        image: "images/pes-2013.jpg",
+        link: "https://sto.romsfast.com/PSP-Complete/Redump/PES%202013%20-%20Pro%20Evolution%20Soccer%20(Europe)%20(EnNlSvRuTr).zip?e=1794863211&s=_jA2nz-OZ6Ya3w4-9BRXlVpHJJq21jF-SyvVtwZHJng"
+    },
+    {
+        id: "efootball-2024",
+        name: "eFootball 2024 PSP",
+        arabicName: "إي فوتبول 2024",
+        category: "action",
+        year: "2024",
+        image: "images/efootball-2024.jpg",
+        link: "https://sto.romsfast.com/Mods/PSP/PES%202024/PES%2024%20%20PPSSPP%20-%20PS5%20Iso%20Save%20Data%20Textures.rar?e=1794863574&s=IYbJblL8GyBLP41IoaTjy-lInmyW_GNHhkB-jG056Go"
     }
 ];
 
