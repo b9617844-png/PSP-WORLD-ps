@@ -33,6 +33,11 @@ description: "لعبة إثارة وتشويق تدور حول الهروب وك
         arabicName: "أساسنز كريد: سلالات الدم",
         year: "2009",
         image: "images/assassins-creed-bloodlines.jpg",
+        screenshots: [
+    "images/assassins-creed-1.jpg",
+    "images/assassins-creed-2.jpg",
+    "images/assassins-creed-3.jpg"
+],
         description: "انطلق في مغامرة أكشن وتسلل مع ألتاير في عالم أساسنز كريد.",
         link: "https://disk.yandex.com/d/BJ7fgQuh7Xoh5Q"
     }
