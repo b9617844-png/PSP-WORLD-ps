@@ -46,6 +46,11 @@ link: "https://download2388.mediafire.com/xx3u67krnw3gkfj5enxuGgSVkP-NE_OewMAMmN
     arabicName: "جود أوف وور: شبح سبارتا",
     year: "2010",
     image: "images/god-of-war-ghost-of-sparta.jpg",
+    screenshots: [
+    "images/god-of-war-1.jpg",
+    "images/god-of-war-2.jpg",
+    "images/god-of-war-3.jpg"
+],
     screenshots: [],
     description: "عِش مغامرة كريتوس في رحلة مليئة بالأسرار والتحديات.",
     link: "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(Asia)%20(EnZhKo).zip?e=1794832433&s=ET5VMWhO9GatPnkVTT-XD3ZIocXpKL03nCYb3Z8K4Ik"
