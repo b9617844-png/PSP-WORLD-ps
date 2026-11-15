@@ -7,6 +7,7 @@ const gamesDetails = {
 screenshots: [
     "images/silent-hill-1.jpg",
     "images/silent-hill-2.jpg"
+    "images/silent-hill-3.jpg"
 ],
         description: "رحلة رعب وغموض في مدينة سايلنت هيل، حيث تتغير الأحداث حسب اختياراتك.",
         link: "https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso/file?action=check&dkey=5uiibu5f59e&r=1554"
