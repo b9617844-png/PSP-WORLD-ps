@@ -53,8 +53,17 @@ link: "https://download2388.mediafire.com/xx3u67krnw3gkfj5enxuGgSVkP-NE_OewMAMmN
 ],
     description: "عِش مغامرة كريتوس في رحلة مليئة بالأسرار والتحديات.",
     link: "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(Asia)%20(EnZhKo).zip?e=1794832433&s=ET5VMWhO9GatPnkVTT-XD3ZIocXpKL03nCYb3Z8K4Ik"
-}
+},
 
+"gta-vice-city-stories": {
+    name: "Grand Theft Auto: Vice City Stories",
+    arabicName: "جاتا فايس سيتي ستوريز",
+    year: "2006",
+    image: "images/gta-vice-city-stories.jpg",
+    screenshots: [],
+    description: "عِش مغامرة مثيرة في مدينة فايس سيتي، واستكشف عالم اللعبة المفتوح.",
+    link: "#"
+}
 };
 
 const params = new URLSearchParams(window.location.search);
