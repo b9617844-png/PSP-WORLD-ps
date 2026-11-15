@@ -119,9 +119,7 @@ function startWebsite() {
                     <p>${game.arabicName}</p>
                     <p>سنة الإصدار: ${game.year}</p>
 
-                    <a href="game.html?id=${game.id}">
-                        تفاصيل اللعبة
-                    </a>
+                    <a href="game.html?id=${game.id}">تحميل اللعبة</a>
                 </div>
             `;
 
