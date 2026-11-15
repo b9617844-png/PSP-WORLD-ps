@@ -18,6 +18,10 @@ screenshots: [
         arabicName: "مانهنت 2 - النسخة العربية",
         year: "2007",
         image: "images/manhunt-2.jpg",
+screenshots: [
+    "images/manhunt-2-1.jpg"
+],
+description: "لعبة إثارة وتشويق تدور حول الهروب وكشف أسرار غامضة.",
         description: "لعبة إثارة وتشويق تدور حول الهروب وكشف أسرار غامضة.",
         link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
     },
