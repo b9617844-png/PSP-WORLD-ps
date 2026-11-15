@@ -25,7 +25,16 @@ const games = [
         year: "2009",
         image: "images/assassins-creed-bloodlines.jpg",
         link: "https://disk.yandex.com/d/BJ7fgQuh7Xoh5Q"
-    }
+    },
+{
+    id: "god-of-war-ghost-of-sparta",
+    name: "God of War: Ghost of Sparta",
+    arabicName: "جود أوف وور: شبح سبارتا",
+    category: "action",
+    year: "2010",
+    image: "images/god-of-war-ghost-of-sparta.jpg",
+    link: "#"
+}
 ];
 
 function startWebsite() {
