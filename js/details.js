@@ -10,7 +10,7 @@ screenshots: [
 "images/silent-hill-3.jpg"
 ],
 description: "رحلة رعب وغموض في مدينة سايلنت هيل، حيث تتغير الأحداث حسب اختياراتك.",
-link: "https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso/file?action=check&dkey=5uiibu5f59e&r=1554"
+link: "https://download2388.mediafire.com/xx3u67krnw3gkfj5enxuGgSVkP-NE_OewMAMmNcBleBtuoS-IqWVyItFQLkQz-fCL0hDldZPQxXPkbbvow2A-88yN7UHdRHdqmE6EkNykGeV2aEg51Z0YWeF2GUOy6Fa9uoKm4hdj4iNIX47bDbE5F0ZFpH3uo3TmqtlV255eXvnmg/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialogues+and+Documents+v1.1.iso"
 },
 
 "manhunt-2": {
@@ -24,7 +24,7 @@ link: "https://www.mediafire.com/file/ze3m0ea4ysjtwm2/Silent+Hill+-+Arabic+Dialo
         "images/manhunt-2-3.jpg"
     ],
     description: "لعبة إثارة وتشويق تدور حول الهروب وكشف أسرار غامضة.",
-    link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check"
+    link: "https://www.mediafire.com/file/c41nov7v93p01qh/Manhunt_2_ara_Uncensored.iso/file?action=check&dkey=z8cs582kqtv&r=798"
 },
 
 "assassins-creed-bloodlines": {
