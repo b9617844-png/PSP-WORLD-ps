@@ -82,5 +82,5 @@ details.innerHTML = `
 `;
 
 } else {
-details.innerHTML = "<h2>اللعبة غير موجودة</h2> <a href="index.html">العودة للرئيسية</a>";
-    }
+    details.innerHTML = '<h2>اللعبة غير موجودة</h2> <a href="index.html">العودة للرئيسية</a>';
+}
