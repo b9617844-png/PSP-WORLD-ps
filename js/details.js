@@ -60,7 +60,11 @@ link: "https://download2388.mediafire.com/xx3u67krnw3gkfj5enxuGgSVkP-NE_OewMAMmN
     arabicName: "جاتا فايس سيتي ستوريز",
     year: "2006",
     image: "images/gta-vice-city-stories.jpg",
-    screenshots: [],
+    screenshots: [
+    "images/gta-vice-city-1.jpg",
+    "images/gta-vice-city-2.jpg",
+    "images/gta-vice-city-3.jpg"
+],
     description: "عِش مغامرة مثيرة في مدينة فايس سيتي، واستكشف عالم اللعبة المفتوح. 🔑 كلمة سر فك الضغط: bySadiqGaming",
     link: "https://download2277.mediafire.com/39otgcj3bilgEdeavu0qd0mzjOcsXWOYwQI7ItKNOCvhVwhI5EL-Tx7Hii9loQrILzZvUkObr-VvUirKeGac0DCMRg69MXrqdRQUkYm8dHrzh5JGBvHsXupre1IZwOuxafMWmvfcpf1UzIEu2dVn40yAlwuT893SIoqwDyAnMZB8KA/nux995d9ytc8spf/bySadiqGaming.rar"
 }
