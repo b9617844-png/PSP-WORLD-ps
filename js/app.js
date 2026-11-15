@@ -49,7 +49,7 @@ const games = [
         id: "fifa-14",
         name: "FIFA 14",
         arabicName: "فيفا 14",
-        category: "sports",
+        category: "sport",
         year: "2013",
         image: "images/fifa-14.jpg",
         link: "https://sto.romsfast.com/PSP-Complete/Redump/FIFA%2014%20(Europe).zip?e=1794863373&s=PcpZ3vh6X3BqJqJG_WdKxmRBIedMBX3u_1_u_NmGPLI"
@@ -58,7 +58,7 @@ const games = [
         id: "pes-2013",
         name: "PES 2013",
         arabicName: "بيس 2013",
-        category: "sports",
+        category: "sport",
         year: "2012",
         image: "images/pes-2013.jpg",
         link: "https://sto.romsfast.com/PSP-Complete/Redump/PES%202013%20-%20Pro%20Evolution%20Soccer%20(Europe)%20(EnNlSvRuTr).zip?e=1794863211&s=_jA2nz-OZ6Ya3w4-9BRXlVpHJJq21jF-SyvVtwZHJng"
@@ -67,7 +67,7 @@ const games = [
         id: "efootball-2024",
         name: "eFootball 2024 PSP",
         arabicName: "إي فوتبول 2024",
-        category: "sports",
+        category: "sport",
         year: "2024",
         image: "images/efootball-2024.jpg",
         link: "https://sto.romsfast.com/Mods/PSP/PES%202024/PES%2024%20%20PPSSPP%20-%20PS5%20Iso%20Save%20Data%20Textures.rar?e=1794863574&s=IYbJblL8GyBLP41IoaTjy-lInmyW_GNHhkB-jG056Go"
