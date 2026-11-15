@@ -6,7 +6,7 @@ const gamesDetails = {
         image: "images/silent-hill.jpg",
 screenshots: [
     "images/silent-hill-1.jpg",
-    "images/silent-hill-2.jpg"
+    "images/silent-hill-2.jpg",
     "images/silent-hill-3.jpg"
 ],
         description: "رحلة رعب وغموض في مدينة سايلنت هيل، حيث تتغير الأحداث حسب اختياراتك.",
