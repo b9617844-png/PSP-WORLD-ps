@@ -33,8 +33,17 @@ const games = [
     category: "action",
     year: "2010",
     image: "images/god-of-war-ghost-of-sparta.jpg",
-    link: "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(Asia)%20(EnZhKo).zip?e=1794832433&s=ET5VMWhO9GatPnkVTT-XD3ZIocXpKL03nCYb3Z8K4Ik"
-}
+            link: "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(Asia)%20(EnZhKo).zip?e=1794832433&s=ET5VMWhO9GatPnkVTT-XD3ZIocXpKL03nCYb3Z8K4Ik"
+    },
+    {
+        id: "gta-vice-city-stories",
+        name: "Grand Theft Auto: Vice City Stories",
+        arabicName: "جاتا فايس سيتي ستوريز",
+        category: "action",
+        year: "2006",
+        image: "images/gta-vice-city-stories.jpg",
+        link: "https://download2277.mediafire.com/39otgcj3bilgEdeavu0qd0mzjOcsXWOYwQI7ItKNOCvhVwhI5EL-Tx7Hii9loQrILzZvUkObr-VvUirKeGac0DCMRg69MXrqdRQUkYm8dHrzh5JGBvHsXupre1IZwOuxafMWmvfcpf1UzIEu2dVn40yAlwuT893SIoqwDyAnMZB8KA/nux995d9ytc8spf/bySadiqGaming.rar"
+    }
 ];
 
 function startWebsite() {
