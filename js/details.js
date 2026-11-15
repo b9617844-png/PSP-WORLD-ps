@@ -19,7 +19,9 @@ screenshots: [
         year: "2007",
         image: "images/manhunt-2.jpg",
 screenshots: [
-    "images/manhunt-2-1.jpg"
+    "images/manhunt-2-1.jpg",
+    "images/manhunt-2-2.jpg",
+    "images/manhunt-2-3.jpg"
 ],
 description: "لعبة إثارة وتشويق تدور حول الهروب وكشف أسرار غامضة.",
         description: "لعبة إثارة وتشويق تدور حول الهروب وكشف أسرار غامضة.",
