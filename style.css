@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-    --bg: #090b14;
-    --card: #121625;
-    --primary: #7657ff;
-    --secondary: #00d4ff;
-    --text: #ffffff;
-    --muted: #9299ad;
+    --bg: #050505;
+    --surface: #0b0b0b;
+    --card: #101010;
+    --border: #222;
+    --text: #f5f5f5;
+    --muted: #888;
 }
 
 * {
@@ -17,41 +17,50 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
     background: var(--bg);
     color: var(--text);
     font-family: 'Cairo', sans-serif;
+    line-height: 1.8;
+    overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
+button, input {
+    font: inherit;
+}
+
+/* HEADER */
+
 .header {
-    height: 75px;
+    min-height: 78px;
     padding: 0 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0e1120;
-    border-bottom: 1px solid #20253a;
+    background: rgba(5,5,5,.96);
+    border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.logo {
+.logo, .header h1 {
     font-size: 25px;
     font-weight: 900;
+    letter-spacing: -1px;
     direction: ltr;
 }
 
-.logo span,
-footer span {
-    color: var(--primary);
+.logo span, footer span {
+    color: #777;
 }
 
 nav {
@@ -60,71 +69,99 @@ nav {
 }
 
 nav a {
-    color: var(--muted);
+    color: #999;
     font-size: 14px;
-    transition: .3s;
+    transition: .25s;
 }
 
 nav a:hover {
-    color: var(--secondary);
+    color: #fff;
 }
 
+/* HERO */
+
 .hero {
-    min-height: 420px;
-    padding: 80px 8%;
+    min-height: 480px;
+    padding: 85px 8%;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
     background:
-        radial-gradient(circle at 80% 40%, #39247766, transparent 40%),
-        linear-gradient(120deg, #101629, #090b14);
+        linear-gradient(90deg, #050505 10%, #050505e8 55%, #05050599),
+        radial-gradient(ellipse at 75% 50%, #33333344, transparent 60%);
+    border-bottom: 1px solid var(--border);
+}
+
+.hero::after {
+    content: "PSP";
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Arial, sans-serif;
+    font-size: clamp(160px, 27vw, 340px);
+    font-weight: 900;
+    color: #ffffff08;
+    letter-spacing: -20px;
+    pointer-events: none;
 }
 
 .hero-content {
     max-width: 650px;
+    position: relative;
+    z-index: 2;
 }
 
 .tag {
-    color: var(--secondary);
-    font-size: 12px;
-    letter-spacing: 2px;
+    color: #888;
+    font-size: 11px;
     font-weight: 800;
+    letter-spacing: 3px;
 }
 
 .hero h1 {
-    font-size: clamp(38px, 7vw, 65px);
-    margin: 15px 0;
+    font-size: clamp(42px, 7vw, 76px);
     font-weight: 900;
+    line-height: 1.3;
+    margin: 18px 0;
 }
 
 .hero h1 span {
-    color: var(--primary);
+    color: #777;
     direction: ltr;
     display: inline-block;
 }
 
 .hero p {
-    color: var(--muted);
-    line-height: 2;
-    max-width: 520px;
-    margin-bottom: 25px;
+    max-width: 500px;
+    color: #999;
+    font-size: 16px;
+    line-height: 2.1;
+    margin-bottom: 30px;
 }
 
 .main-btn {
     display: inline-block;
-    padding: 12px 30px;
-    border-radius: 8px;
-    background: linear-gradient(90deg, #7657ff, #4931c5);
-    font-weight: 700;
-    transition: .3s;
+    padding: 12px 32px;
+    background: #eee;
+    color: #080808;
+    font-weight: 800;
+    border: 1px solid #eee;
+    transition: .25s;
 }
 
 .main-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 30px #7657ff55;
+    background: transparent;
+    color: #fff;
 }
 
+/* GAMES LIBRARY */
+
 .games-section {
-    padding: 65px 7%;
+    padding: 75px 7%;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .section-title {
@@ -133,129 +170,255 @@ nav a:hover {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border);
 }
 
 .section-title h2 {
-    font-size: 30px;
+    font-size: 32px;
+    font-weight: 900;
     margin-top: 5px;
 }
 
 #search {
-    background: var(--card);
-    border: 1px solid #282e45;
-    color: white;
+    width: min(100%, 300px);
     padding: 13px 18px;
-    border-radius: 9px;
-    width: min(100%, 280px);
-    font-family: inherit;
+    background: #101010;
+    border: 1px solid #292929;
+    color: white;
+    border-radius: 5px;
     outline: none;
+    transition: .25s;
+}
+
+#search::placeholder {
+    color: #777;
 }
 
 #search:focus {
-    border-color: var(--primary);
+    border-color: #777;
+    background: #151515;
 }
+
+/* CATEGORIES */
 
 .categories {
     display: flex;
     gap: 10px;
-    margin: 30px 0;
-    overflow-x: auto;
+    margin: 28px 0 35px;
     padding-bottom: 8px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #444 transparent;
 }
 
 .categories button {
-    background: var(--card);
-    border: 1px solid #282e45;
-    color: var(--muted);
-    padding: 9px 22px;
-    border-radius: 7px;
-    font-family: inherit;
+    flex-shrink: 0;
+    padding: 9px 23px;
+    background: #111;
+    color: #999;
+    border: 1px solid #292929;
+    border-radius: 4px;
     cursor: pointer;
+    transition: .25s;
     white-space: nowrap;
 }
 
-.categories button.active,
-.categories button:hover {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
+.categories button:hover,
+.categories button.active {
+    background: #eee;
+    color: #080808;
+    border-color: #eee;
 }
+
+
+/* GAME CARDS */
 
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-    gap: 22px;
+    gap: 25px;
 }
 
 .game-card {
-    background: var(--card);
-    border: 1px solid #20253a;
-    border-radius: 12px;
+    background: #101010;
+    border: 1px solid #202020;
+    border-radius: 5px;
     overflow: hidden;
-    transition: .3s;
+    transition: transform .3s, border-color .3s;
 }
 
 .game-card:hover {
-    transform: translateY(-7px);
-    border-color: var(--primary);
+    transform: translateY(-6px);
+    border-color: #666;
 }
 
 .game-card img {
     width: 100%;
-    height: 230px;
-    object-fit: cover;
+    height: 260px;
     display: block;
-    background: #20253a;
+    object-fit: contain;
+    background: #181818;
+    filter: saturate(.82);
+    transition: filter .3s;
 }
-
 .game-info {
-    padding: 15px;
+    padding: 16px;
 }
 
 .game-info h3 {
+    color: #eee;
     font-size: 16px;
+    font-weight: 800;
     margin-bottom: 5px;
 }
 
 .game-info p {
-    color: var(--muted);
+    color: #888;
     font-size: 12px;
 }
 
 .game-info a {
     display: block;
     text-align: center;
-    background: #7657ff22;
-    color: #a895ff;
+    margin-top: 15px;
     padding: 9px;
-    margin-top: 14px;
-    border-radius: 7px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    color: #ddd;
     font-size: 13px;
+    transition: .25s;
 }
+
+.game-info a:hover {
+    background: #eee;
+    color: #080808;
+    border-color: #eee;
+}
+
+/* INSTALLATION GUIDE */
+
+.installation-guide {
+    width: 86%;
+    max-width: 1100px;
+    margin: 40px auto 70px;
+    padding: 35px;
+    background: #0d0d0d;
+    border: 1px solid #252525;
+    border-radius: 6px;
+    color: #eee;
+    direction: rtl;
+}
+
+.installation-guide h2 {
+    color: #eee;
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.guide-content h3 {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.guide-content > p {
+    color: #999;
+    line-height: 2;
+}
+
+.guide-step {
+    background: #151515;
+    border-right: 3px solid #777;
+    padding: 17px;
+    margin: 15px 0;
+    border-radius: 3px;
+}
+
+.guide-step h4 {
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+.guide-step p {
+    color: #aaa;
+    line-height: 1.9;
+}
+
+.guide-note {
+    background: #171717;
+    padding: 14px;
+    border-radius: 3px;
+    margin-top: 20px;
+    color: #bbb !important;
+}
+
+/* FOOTER */
 
 footer {
     text-align: center;
-    padding: 40px 15px;
-    background: #0e1120;
-    border-top: 1px solid #20253a;
+    padding: 45px 20px;
+    background: #090909;
+    border-top: 1px solid #252525;
+}
+
+footer h2 {
+    font-size: 27px;
+    font-weight: 900;
+    direction: ltr;
 }
 
 footer p {
-    color: var(--muted);
+    color: #888;
     margin: 10px 0;
 }
 
 footer small {
-    color: #626a80;
+    display: block;
+    color: #666;
+    margin-top: 15px;
 }
 
-@media (max-width: 600px) {
+.youtube-channel {
+    max-width: 450px;
+    margin: 30px auto 0;
+    padding: 22px;
+    background: #111;
+    border: 1px solid #292929;
+}
+
+.youtube-channel h3 {
+    color: #eee;
+}
+
+.youtube-channel a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 22px;
+    background: #eee;
+    color: #080808;
+    font-weight: 700;
+    transition: .25s;
+}
+
+.youtube-channel a:hover {
+    background: #aaa;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
     .header {
+        min-height: 68px;
         padding: 0 5%;
     }
 
+    .logo {
+        font-size: 21px;
+    }
+
     nav {
-        gap: 12px;
+        gap: 14px;
     }
 
     nav a {
@@ -263,20 +426,84 @@ footer small {
     }
 
     .hero {
-        min-height: 350px;
-        padding: 55px 6%;
+        min-height: 390px;
+        padding: 60px 6%;
+    }
+
+    .hero::after {
+        left: -10%;
+        font-size: 180px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 14px;
     }
 
     .games-section {
-        padding: 45px 5%;
+        padding: 50px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    #search {
+        width: 100%;
     }
 
     .games-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
+        gap: 13px;
     }
 
     .game-card img {
-        height: 180px;
+        height: 195px;
+    }
+
+    .game-info {
+        padding: 11px;
+    }
+
+    .game-info h3 {
+        font-size: 13px;
+    }
+
+    .game-info a {
+        font-size: 12px;
+    }
+
+    .installation-guide {
+        width: 92%;
+        padding: 20px;
+    }
+
+    .installation-guide h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        padding: 0 3%;
+    }
+
+    nav {
+        gap: 9px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .games-grid {
+        gap: 9px;
+    }
+
+    .game-card img {
+        height: 165px;
     }
 }
