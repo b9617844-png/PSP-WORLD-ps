@@ -33,7 +33,7 @@ const games = [
     category: "action",
     year: "2010",
     image: "images/god-of-war-ghost-of-sparta.jpg",
-            link: "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(Asia)%20(EnZhKo).zip?e=1794832433&s=ET5VMWhO9GatPnkVTT-XD3ZIocXpKL03nCYb3Z8K4Ik"
+            link: "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(Asia)%20(EnZhKo).zip?e=1794944707&s=8uK-7sUNzk-2ooe7vmRvLNrmagMlx89dKzWiDknm6T8"
     },
     {
             
